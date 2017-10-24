@@ -10,5 +10,5 @@ Just drop your XML files on the XMLFormatter executable file, or pass them as pa
 ```
 
 # Important Notes
-The original file will be formatted and replaced by the formatted version. 
-If you want to keep both versions, please be advised to have backups of your XMLs
+The original file will be formatted and a new file created with the same name but preffixed by 'Formatted_'.
+If you want to replace the original version, use the /r option
