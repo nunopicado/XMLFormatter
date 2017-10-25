@@ -42,7 +42,7 @@ procedure ShowFooter;
 begin
   WriteLn;
   WriteLn('------------------------------------');
-  WriteLn('XMLFormatter v1.0 2017 © Nuno Picado');
+  WriteLn('XMLFormatter v1.1 2017 © Nuno Picado');
   WriteLn;
   WriteLn;
 end;
