@@ -10,6 +10,9 @@ uses
   , OmniXML
   ;
 
+const
+  cVersion = '1.2';
+
 type
   TParams = record
     ReplaceFile: Boolean;
@@ -30,21 +33,36 @@ begin
 end;
 
 procedure ShowTitle;
+var
+  s: string;
 begin
-  WriteLn;
-  WriteLn('==================');
-  WriteLn('XML Formatter v1.1');
-  WriteLn('==================');
-  WriteLn;
+  s := Format('XML Formatter v%s', [cVersion]);
+  WriteLn(
+    sLineBreak,
+    sLineBreak,
+    StringOfChar('=', s.Length),
+    sLineBreak,
+    s,
+    sLineBreak,
+    StringOfChar('=', s.Length),
+    sLineBreak
+  );
 end;
 
 procedure ShowFooter;
+var
+  s: string;
 begin
-  WriteLn;
-  WriteLn('------------------------------------');
-  WriteLn('XMLFormatter v1.1 2017 © Nuno Picado');
-  WriteLn;
-  WriteLn;
+  s := Format('XMLFormatter v%s 2017 © Nuno Picado', [cVersion]);
+  WriteLn(
+    sLineBreak,
+    StringOfChar('-', s.Length),
+    sLineBreak,
+    s,
+    sLineBreak,
+    sLineBreak,
+    sLineBreak
+  );
 end;
 
 function TargetFileName(FileName: string): string;
