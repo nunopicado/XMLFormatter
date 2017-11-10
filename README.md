@@ -6,8 +6,10 @@ Just drop your XML files on the XMLFormatter executable file, or pass them as pa
 
 # Example
 ```
-  XMLFormatter file1.xml [file2.xml file3.xml ...]
+  XMLFormatter [/r] file1.xml [file2.xml file3.xml ...]
 ```
+
+    /r      Replaces original files with formatted versions
 
 # Important Notes
 The original file will be formatted and a new file created with the same name but preffixed by 'Formatted_'.
